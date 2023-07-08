@@ -6,7 +6,7 @@ global base, cur
 
 def sql_start():
     global base, cur
-    base = sq.connect(database='pizza_cool.db')
+    base = sq.connect(database='pizza_menu.db')
     cur = base.cursor()
     base.execute('CREATE TABLE IF NOT EXISTS menu(img TEXT, name TEXT PRIMARY KEY, description TEXT, price TEXT)')
     base.commit()
